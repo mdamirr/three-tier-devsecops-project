@@ -43,10 +43,13 @@ variable "instance_name" {
 
 variable "instance_type" {
   description = "Type of EC2 instance"
-  default     = "t2.2xlarge"
+  default     = "t2.large"
 }
 
-
+variable "ami" {
+description = "The ami id for ubuntu instance"
+default = "ami-03aa99ddf5498ceb9"
+}
 # Key Pair
 
 variable "key_name" {
